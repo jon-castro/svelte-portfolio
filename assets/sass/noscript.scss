@@ -5,43 +5,35 @@
 @import 'libs/breakpoints';
 
 /*
-	Lens by Pixelarity
+	Indivisible by Pixelarity
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 */
 
-/* Main */
+/* Panel */
 
-	#main {
-		opacity: 1 !important;
+	.panel {
+		margin: 0 0 (_size(element-margin) * 1.5) 0;
 
-		@if _misc(main-side) == 'left' {
-			left: 0 !important;
-		}
-		@else {
-			right: 0 !important;
+		body.is-preload-0 & {
+			opacity: 1;
+
+			> .image {
+				@include vendor('transform', 'none !important');
+			}
+
+			> .content {
+				@include vendor('transform', 'none !important');
+			}
 		}
 	}
 
-	body:before {
-		content: 'Javascript is disabled :(';
-		display: block;
-		position: absolute;
-		top: 50%;
-		width: calc(100% - #{_size(main)} * 0.333333333);
-		height: 4em;
-		margin-top: -2em;
-		color: mix(_palette(page-bg), #fff, 90%);
-		cursor: default;
-		font-size: 3em;
-		line-height: 4em;
-		text-align: center;
-		white-space: nowrap;
+/* Footer */
 
-		@if _misc(main-side) == 'left' {
-			right: 0;
-		}
-		@else {
-			left: 0;
+	#footer {
+		margin-top: 0;
+
+		body.is-preload-0 & {
+			opacity: 1;
 		}
 	}

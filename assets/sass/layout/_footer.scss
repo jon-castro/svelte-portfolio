@@ -1,5 +1,5 @@
 ///
-/// Lens by Pixelarity
+/// Indivisible by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
@@ -7,21 +7,32 @@
 /* Footer */
 
 	#footer {
-		@include padding(2.25em, 2.25em);
+		@include vendor('transition', 'opacity 0.5s ease');
+		margin: (_size(element-margin) * 1.5) 0 0 0;
+		opacity: 1.0;
+		text-align: center;
 
 		.copyright {
-			list-style: none;
-			padding: 0;
+			color: _palette(fg-light);
+			font-size: 0.8em;
+			letter-spacing: _font(letter-spacing-alt);
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
 
-			li {
-				display: inline-block;
-				font-size: 0.8em;
-				margin-left: 0.35em;
-				padding: 0;
+		&.inactive {
+			opacity: 0;
+		}
 
-				&:first-child {
-					margin-left: 0;
-				}
-			}
+		@include breakpoint('<=xlarge') {
+			margin: _size(element-margin) 0 0 0;
+		}
+
+		@include breakpoint('<=large') {
+			margin: (_size(element-margin) * 0.75) 0 0 0;
+		}
+
+		body.is-preload-0 & {
+			opacity: 0;
 		}
 	}

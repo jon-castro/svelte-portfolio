@@ -1,29 +1,39 @@
 /*
-	Lens by Pixelarity
+	Indivisible by Pixelarity
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 */
 
-/* Main */
+/* Panel */
 
-	#main {
-		opacity: 1 !important;
-		right: 0 !important;
+	.panel {
+		margin: 0 0 3em 0;
 	}
 
-	body:before {
-		content: 'Javascript is disabled :(';
-		display: block;
-		position: absolute;
-		top: 50%;
-		width: calc(100% - 22.5em * 0.333333333);
-		height: 4em;
-		margin-top: -2em;
-		color: #282828;
-		cursor: default;
-		font-size: 3em;
-		line-height: 4em;
-		text-align: center;
-		white-space: nowrap;
-		left: 0;
+		body.is-preload-0 .panel {
+			opacity: 1;
+		}
+
+			body.is-preload-0 .panel > .image {
+				-moz-transform: none !important;
+				-webkit-transform: none !important;
+				-ms-transform: none !important;
+				transform: none !important;
+			}
+
+			body.is-preload-0 .panel > .content {
+				-moz-transform: none !important;
+				-webkit-transform: none !important;
+				-ms-transform: none !important;
+				transform: none !important;
+			}
+
+/* Footer */
+
+	#footer {
+		margin-top: 0;
 	}
+
+		body.is-preload-0 #footer {
+			opacity: 1;
+		}
