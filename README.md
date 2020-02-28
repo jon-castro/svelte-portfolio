@@ -1,7 +1,3 @@
-# 2019-portfolio
+# Portfolio - Jonathan Castro
 
 A portfolio of work, ideas and contact info. To host on jcastro.dev.
-
----
-
-Based on the Lens template from Pixelarity.
