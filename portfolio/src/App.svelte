@@ -1,5 +1,28 @@
 <script>
+  import router from "page";
 
+  // Routes
+  import Home from "./routes/Home.svelte";
+  import Blog from "./routes/Blog.svelte";
+  import SingleBlog from "./routes/SingleBlog.svelte";
+
+  let page;
+  let params;
+
+  router("/", () => (page = Home));
+  router("/blog", () => (page = Blog));
+  router(
+    "/blog/:id",
+    //Before we set the component
+    (ctx, next) => {
+      params = ctx.params;
+      next();
+    },
+    //Set the component
+    () => (page = SingleBlog)
+  );
+
+  router.start();
 </script>
 
 <style global>
@@ -26,6 +49,11 @@
   @tailwind utilities;
 </style>
 
+<nav>
+  <a href="/">Home</a>
+  <a href="/blog">Blog</a>
+</nav>
+
 <main>
-  <h1>jcastro.dev</h1>
+  <svelte:component this={page} {params} />
 </main>
