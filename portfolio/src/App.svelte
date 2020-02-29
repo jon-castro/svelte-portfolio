@@ -1,6 +1,6 @@
 <script>
   import router from "page";
-  import routes from "./routes";
+  import routes from "./pages";
 
   let page;
   let params;
@@ -43,10 +43,10 @@
   }
 </style>
 
-<nav>
+<!-- <nav>
   <a href="/">Home</a>
   <a href="/blog">Blog</a>
-</nav>
+</nav> -->
 
 <main>
   <svelte:component this={page} {params} />
