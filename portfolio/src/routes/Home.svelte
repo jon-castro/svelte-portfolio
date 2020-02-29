@@ -1,0 +1,5 @@
+<script>
+
+</script>
+
+<h1 class="text-center">Home Page.</h1>
