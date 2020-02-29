@@ -1,26 +1,21 @@
 <script>
   import router from "page";
-
-  // Routes
-  import Home from "./routes/Home.svelte";
-  import Blog from "./routes/Blog.svelte";
-  import SingleBlog from "./routes/SingleBlog.svelte";
+  import routes from "./routes";
 
   let page;
   let params;
 
-  router("/", () => (page = Home));
-  router("/blog", () => (page = Blog));
-  router(
-    "/blog/:id",
-    //Before we set the component
-    (ctx, next) => {
-      params = ctx.params;
-      next();
-    },
-    //Set the component
-    () => (page = SingleBlog)
-  );
+  routes.forEach(route => {
+    router(
+      route.path,
+      //Context and initialization
+      (ctx, next) => {
+        params = ctx.params;
+        next();
+      },
+      () => (page = route.component)
+    );
+  });
 
   router.start();
 </script>
