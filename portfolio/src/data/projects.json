@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Project title 1",
+    "summary": "Brief description 1",
+    "body": "Full project description 1",
+    "repoUrl": "repoUrlHere",
+    "demoUrl": "demoUrlHere",
+    "image": "imageLocationHere"
+  }
+]

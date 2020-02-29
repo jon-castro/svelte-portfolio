@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "title": "Article title 1",
+    "summary": "Article summary 1",
+    "body": "Article body 1",
+    "image": "imageLocationHere"
+  }
+]

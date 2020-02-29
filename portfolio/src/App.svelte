@@ -22,6 +22,8 @@
 
 <style global>
   @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
   body {
     padding: 0;
@@ -39,9 +41,6 @@
   a {
     @apply text-blue-600;
   }
-
-  @tailwind components;
-  @tailwind utilities;
 </style>
 
 <nav>
