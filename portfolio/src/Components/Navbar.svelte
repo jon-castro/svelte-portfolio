@@ -39,22 +39,22 @@
       </button>
     </div>
   </div>
-  <div>
+  <div class="sm:flex sm:justify-evenly">
     <a
       href="#"
-      class="px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
+      class="mt-1 px-2 py-3 text-gray font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
       sm:inline-block sm:justify-between">
       List item 1
     </a>
     <a
       href="#"
-      class="mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
+      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
       sm:inline-block sm:justify-between">
       List item 2
     </a>
     <a
       href="#"
-      class="mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
+      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
       sm:inline-block sm:justify-between">
       List item 3
     </a>

@@ -27,7 +27,7 @@
 
   body {
     padding: 0;
-    background-color: #cbd0d8;
+    @apply bg-light-gray;
   }
   h1 {
     @apply text-3xl;
@@ -39,7 +39,7 @@
     @apply text-lg;
   }
   a {
-    @apply text-blue-600;
+    @apply text-lg;
   }
 </style>
 
