@@ -4,7 +4,9 @@
 </script>
 
 <style>
-
+  .link {
+    @apply text-light-gray;
+  }
 </style>
 
 <header class="bg-dark-blue">
@@ -41,22 +43,28 @@
   </div>
   <div class="sm:flex sm:justify-evenly">
     <a
-      href="#"
-      class="mt-1 px-2 py-3 text-gray font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
-      sm:inline-block sm:justify-between">
-      List item 1
+      href="/"
+      class="mt-1 px-2 py-3 text-gray font-semibold rounded hover:bg-blue-800 {isMenuOpen ? 'block' : 'hidden'}
+      sm:inline-block sm:justify-between link">
+      Home
     </a>
     <a
-      href="#"
-      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
-      sm:inline-block sm:justify-between">
-      List item 2
+      href="#projects"
+      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-blue-800 {isMenuOpen ? 'block justify-center' : 'hidden'}
+      sm:inline-block sm:justify-between link">
+      Projects
     </a>
     <a
-      href="#"
-      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
-      sm:inline-block sm:justify-between">
-      List item 3
+      href="#articles"
+      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-blue-800 {isMenuOpen ? 'block' : 'hidden'}
+      sm:inline-block sm:justify-between link">
+      Articles
+    </a>
+    <a
+      href="#contact"
+      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-blue-800 {isMenuOpen ? 'block' : 'hidden'}
+      sm:inline-block sm:justify-between link">
+      Contact
     </a>
   </div>
 </header>
