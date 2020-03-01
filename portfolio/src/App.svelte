@@ -1,6 +1,6 @@
 <script>
   import router from "page";
-  import routes from "./pages";
+  import routes from "./routes";
 
   let page;
   let params;
@@ -27,7 +27,7 @@
 
   body {
     padding: 0;
-    background-color: #212121;
+    background-color: #cbd0d8;
   }
   h1 {
     @apply text-3xl;

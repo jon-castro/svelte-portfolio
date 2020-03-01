@@ -1,6 +1,4 @@
 <script>
-  let logo = "/images/jcastro.dev_text_logo.png";
-  let logo_alt = "Welcome to Jonathan Castro's page!";
   let isMenuOpen = false;
   const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 </script>
@@ -9,10 +7,13 @@
 
 </style>
 
-<header class="bg-gray-900">
+<header class="bg-dark-blue">
   <div class="flex items-center justify-between px-4 py-3">
     <div>
-      <img id="logo" class="h-10" src={src_logo} alt={alt_logo} />
+      <img
+        class="h-10"
+        src="/images/jcastro.dev_text_logo.png"
+        alt="Welcome to Jonathan Castro's page!" />
     </div>
     <div class="sm:hidden">
       <button
@@ -42,19 +43,19 @@
     <a
       href="#"
       class="px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
-      sm:block">
+      sm:inline-block sm:justify-between">
       List item 1
     </a>
     <a
       href="#"
       class="mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
-      sm:block">
+      sm:inline-block sm:justify-between">
       List item 2
     </a>
     <a
       href="#"
       class="mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 {isMenuOpen ? 'block' : 'hidden'}
-      sm:block">
+      sm:inline-block sm:justify-between">
       List item 3
     </a>
   </div>
