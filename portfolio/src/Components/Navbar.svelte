@@ -4,12 +4,15 @@
 </script>
 
 <style>
+  header {
+    background-image: url("/images/navbar_bg.png");
+  }
   .link {
     @apply text-light-gray;
   }
 </style>
 
-<header class="bg-dark-blue">
+<header class="bg-dark-blue bg-center">
   <div class="flex items-center justify-between px-4 py-3">
     <div>
       <img
