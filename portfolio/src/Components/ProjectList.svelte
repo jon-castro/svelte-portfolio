@@ -1,6 +1,4 @@
 <script>
-  import { onMount } from "svelte";
-
   import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
   import FaLaptopCode from "svelte-icons/fa/FaLaptopCode.svelte";
 
@@ -21,26 +19,26 @@
 
 <div class="container my-12 mx-auto px-4 md:px-12">
   <div class="flex flex-wrap justify-center -mx-1 lg:-mx-4">
-
     {#each data as item}
       <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 xl:w-1/4">
         <article class="bg-dark-yellow overflow-hidden rounded-lg shadow-lg">
-          <a href="/project/{item.id}">
+          <a href="/project/{item.id - 1}">
             <img
               alt="Placeholder"
               class="block h-auto w-full"
               src={item.image} />
           </a>
           <header
-            class="flex items-center justify-between leading-tight p-2 md:p-4">
+            class="flex items-center justify-center leading-tight p-2 md:p-4">
             <h1 class="text-lg">
               <a
                 class="no-underline hover:underline text-light-tan"
-                href="/project/{item.id}">
+                href="/project/{item.id - 1}">
                 {item.title}
               </a>
             </h1>
           </header>
+          <h6 class="m-4">{item.summary}</h6>
           <footer class="flex justify-evenly leading-none p-2 md:p-4">
             {#if item.repoUrl !== ''}
               <a
@@ -67,6 +65,5 @@
         </article>
       </div>
     {/each}
-
   </div>
 </div>
