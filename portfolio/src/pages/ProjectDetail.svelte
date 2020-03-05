@@ -26,5 +26,6 @@
     Back to Project List
   </button>
 </a>
+
 <h1 class="text-center text-light-tan">{data.title}</h1>
 <p class="px-3 pt-5">{data.body}</p>

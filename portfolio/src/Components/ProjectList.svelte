@@ -22,7 +22,7 @@
     {#each data as item}
       <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 xl:w-1/4">
         <article class="bg-dark-yellow overflow-hidden rounded-lg shadow-lg">
-          <a href="/project/{item.id - 1}">
+          <a href="/project/{item.id}">
             <img
               alt="Placeholder"
               class="block h-auto w-full"
@@ -33,7 +33,7 @@
             <h1 class="text-lg">
               <a
                 class="no-underline hover:underline text-light-tan"
-                href="/project/{item.id - 1}">
+                href="/project/{item.id}">
                 {item.title}
               </a>
             </h1>

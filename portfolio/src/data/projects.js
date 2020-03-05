@@ -1,6 +1,6 @@
 let projects = [
   {
-    id: 1,
+    id: 0,
     title: "Project title 1",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel leo et nulla pharetra accumsan.",
@@ -11,7 +11,7 @@ let projects = [
     image: "https://loremflickr.com/600/480/"
   },
   {
-    id: 2,
+    id: 1,
     title: "Project title 2",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel leo et nulla pharetra accumsan.",
@@ -22,7 +22,7 @@ let projects = [
     image: "https://loremflickr.com/600/480/"
   },
   {
-    id: 3,
+    id: 2,
     title: "Project title 3",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel leo et nulla pharetra accumsan.",
@@ -33,7 +33,7 @@ let projects = [
     image: "https://loremflickr.com/600/480/"
   },
   {
-    id: 4,
+    id: 3,
     title: "Project title 4",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel leo et nulla pharetra accumsan.",
