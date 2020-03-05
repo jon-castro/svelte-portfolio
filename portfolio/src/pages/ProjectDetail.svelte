@@ -9,6 +9,9 @@
 </script>
 
 <style>
+  body {
+    @apply border-indigo-900;
+  }
   .icon {
     color: antiquewhite;
     width: 25px;
