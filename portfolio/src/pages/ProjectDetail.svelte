@@ -13,9 +13,10 @@
     @apply border-indigo-900;
   }
   .icon {
-    color: antiquewhite;
+    @apply text-primary;
     width: 25px;
     height: 25px;
+    padding-top: 5%;
   }
 </style>
 
