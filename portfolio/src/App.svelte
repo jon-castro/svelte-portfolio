@@ -22,10 +22,9 @@
 
 <style global>
   @tailwind base;
-
   body {
     padding: 0;
-    background-color: #212121;
+    @apply bg-elements;
   }
   h1 {
     @apply text-3xl;
@@ -37,17 +36,11 @@
     @apply text-lg;
   }
   a {
-    @apply text-blue-600;
+    @apply text-lg;
   }
-
   @tailwind components;
   @tailwind utilities;
 </style>
-
-<nav>
-  <a href="/">Home</a>
-  <a href="/blog">Blog</a>
-</nav>
 
 <main>
   <svelte:component this={page} {params} />

@@ -1,5 +1,9 @@
 <script>
-
+  import Navbar from "../Components/Navbar.svelte";
+  import About from "../Components/About.svelte";
+  import ProjectList from "../Components/ProjectList.svelte";
 </script>
 
-<h1 class="text-center">Home Page.</h1>
+<Navbar />
+<About />
+<ProjectList />
