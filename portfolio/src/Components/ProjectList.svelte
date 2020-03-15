@@ -15,13 +15,13 @@
   }
 </style>
 
-<h1 id="projects" class="text-center text-light-tan">Projects</h1>
+<h1 id="projects" class="text-center text-white">Projects</h1>
 
 <div class="container my-12 mx-auto px-4 md:px-12">
   <div class="flex flex-wrap justify-center -mx-1 lg:-mx-4">
     {#each data as item}
       <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 xl:w-1/4">
-        <article class="bg-dark-yellow overflow-hidden rounded-lg shadow-lg">
+        <article class="bg-yellow-500 overflow-hidden rounded-lg shadow-lg">
           <a href="/project/{item.id}">
             <img
               alt="Placeholder"
@@ -32,7 +32,7 @@
             class="flex items-center justify-center leading-tight p-2 md:p-4">
             <h1 class="text-lg">
               <a
-                class="no-underline hover:underline text-light-tan"
+                class="no-underline hover:underline text-white"
                 href="/project/{item.id}">
                 {item.title}
               </a>

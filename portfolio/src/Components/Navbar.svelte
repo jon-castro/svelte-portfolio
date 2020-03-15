@@ -5,11 +5,10 @@
 
 <style>
   .link {
-    @apply text-light-gray;
   }
 </style>
 
-<header class="bg-indigo-900">
+<header class="bg-indigo-700">
   <div class="flex items-center justify-between px-4 py-3">
     <div>
       <img
@@ -44,26 +43,26 @@
   <div class="sm:flex sm:justify-evenly"> -->
     <a
       href="/"
-      class="mt-1 px-2 py-3 text-gray font-semibold rounded hover:bg-elements {isMenuOpen ? 'block bg-red-800 ml-8 mt-1 mb-0' : 'hidden'}
+      class="mt-1 px-2 py-3 text-gray font-semibold rounded hover:bg-indigo-700 {isMenuOpen ? 'block bg-red-800 ml-8 mt-1 mb-0' : 'hidden'}
       sm:inline-block sm:justify-between link">
       Home
     </a>
     <a
       href="#projects"
-      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-elements {isMenuOpen ? 'block' : 'hidden'}
-      sm:inline-block sm:justify-between link">
+      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-indigo-700
+      {isMenuOpen ? 'block' : 'hidden'} sm:inline-block sm:justify-between link">
       Projects
     </a>
     <a
       href="#articles"
-      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-elements {isMenuOpen ? 'block' : 'hidden'}
-      sm:inline-block sm:justify-between link">
+      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-indigo-700
+      {isMenuOpen ? 'block' : 'hidden'} sm:inline-block sm:justify-between link">
       Articles
     </a>
     <a
       href="#contact"
-      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-elements {isMenuOpen ? 'block' : 'hidden'}
-      sm:inline-block sm:justify-between link">
+      class="mt-1 px-2 py-3 text-white font-semibold rounded hover:bg-indigo-700
+      {isMenuOpen ? 'block' : 'hidden'} sm:inline-block sm:justify-between link">
       Contact
     </a>
     <div class="sm:hidden {isMenuOpen ? 'justify-end' : 'justify-between'}">

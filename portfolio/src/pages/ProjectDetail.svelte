@@ -13,7 +13,7 @@
     @apply border-indigo-900;
   }
   .icon {
-    @apply text-primary;
+    @apply text-white;
     width: 25px;
     height: 25px;
     padding-top: 5%;
@@ -31,5 +31,5 @@
   </button>
 </a>
 
-<h1 class="text-center text-light-tan">{data.title}</h1>
+<h1 class="text-center text-white">{data.title}</h1>
 <p class="px-3 pt-5">{data.body}</p>

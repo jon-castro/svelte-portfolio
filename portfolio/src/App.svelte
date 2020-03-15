@@ -24,7 +24,7 @@
   @tailwind base;
   body {
     padding: 0;
-    @apply bg-elements;
+    @apply bg-gray-800;
   }
   h1 {
     @apply text-3xl;
