@@ -8,7 +8,7 @@
   }
 </style>
 
-<header class="bg-indigo-700">
+<header>
   <div class="flex items-center justify-between px-4 py-3">
     <div>
       <img
@@ -43,7 +43,7 @@
   <div class="sm:flex sm:justify-evenly"> -->
     <a
       href="/"
-      class="mt-1 px-2 py-3 text-gray font-semibold rounded hover:bg-indigo-700 {isMenuOpen ? 'block bg-red-800 ml-8 mt-1 mb-0' : 'hidden'}
+      class="mt-1 px-2 py-3 text-gray font-semibold rounded {isMenuOpen ? 'block bg-red-800 ml-8 mt-1 mb-0' : 'hidden'}
       sm:inline-block sm:justify-between link">
       Home
     </a>

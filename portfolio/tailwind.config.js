@@ -2,10 +2,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#D0E1F9",
-        secondary: "#283655",
-        elements: "#1E1F26",
-        emphasis: "#4D648D"
+        "background-light": "#C5CAE9",
+        "background-dark": "#000",
+        "secondary-light": "#282828",
+        "secondary-dark": "#0C0032",
+        "section-light": "#240090",
+        "section-dark": "#190061",
+        "button-light": "#190061",
+        "button-dark": "#3500D3",
+        "text-light": "#000",
+        "text-dark": "#FFF",
+        "text-buttons": "#FFF"
       }
     }
   },

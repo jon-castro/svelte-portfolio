@@ -23,20 +23,29 @@
 <style global>
   @tailwind base;
   body {
-    padding: 0;
-    @apply bg-gray-800;
+    @apply bg-background-dark;
+  }
+  header {
+    @apply bg-secondary-dark;
   }
   h1 {
+    @apply text-text-dark;
     @apply text-3xl;
   }
   h2 {
+    @apply text-text-dark;
     @apply text-xl;
   }
   h3 {
+    @apply text-text-dark;
     @apply text-lg;
   }
   a {
+    @apply text-text-buttons;
     @apply text-lg;
+  }
+  a:hover {
+    @apply bg-button-dark;
   }
   @tailwind components;
   @tailwind utilities;

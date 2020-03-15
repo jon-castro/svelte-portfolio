@@ -9,7 +9,7 @@
 
 <style>
   .icon {
-    @apply text-red-700;
+    @apply text-indigo-800;
     width: 50px;
     height: 50px;
   }
