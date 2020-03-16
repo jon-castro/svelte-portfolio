@@ -28,8 +28,8 @@
     <div class="sm:hidden justify-start">
       <button
         type="button"
-        class="block text-gray-500 hover:text-white focus:text-white
-        focus:outline-none"
+        class="block {isDarkMode ? 'text-text-dark' : 'text-text-light'}
+        hover:text-white focus:text-white focus:outline-none"
         on:click={toggleMenu}>
         <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
           {#if isMenuOpen}
@@ -50,25 +50,25 @@
     </div>
     <a
       href="/"
-      class="mt-1 px-2 py-3 text-gray font-semibold rounded {isMenuOpen ? 'block ml-8 mt-1 mb-0' : 'hidden'}
+      class="mt-1 px-2 py-3 font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
       sm:inline-block sm:justify-between link">
       Home
     </a>
     <a
       href="#projects"
-      class="mt-1 px-2 py-3 text-white font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
+      class="mt-1 px-2 py-3 font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
       sm:inline-block sm:justify-between link">
       Projects
     </a>
     <a
       href="#articles"
-      class="mt-1 px-2 py-3 text-white font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
+      class="mt-1 px-2 py-3 font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
       sm:inline-block sm:justify-between link">
       Articles
     </a>
     <a
       href="#contact"
-      class="mt-1 px-2 py-3 text-white font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
+      class="mt-1 px-2 py-3 font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
       sm:inline-block sm:justify-between link">
       Contact
     </a>
@@ -76,7 +76,7 @@
       class="h-8 sm:hidden {isMenuOpen ? 'hidden' : 'justify-between'}"
       src="/images/jcastro.dev_text_logo.png"
       alt="Welcome to Jonathan Castro's page!" />
-    <button class="icon rounded-full">
+    <button class="icon rounded-full" on:click={toggleDarkMode}>
       {#if isDarkMode}
         <IoIosSunny />
       {:else}
