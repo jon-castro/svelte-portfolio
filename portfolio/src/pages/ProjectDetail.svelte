@@ -1,7 +1,7 @@
 <script>
-  import FaArrowLeft from "svelte-icons/fa/FaArrowLeft.svelte";
-
   export let params;
+
+  import FaArrowLeft from "svelte-icons/fa/FaArrowLeft.svelte";
 
   import projects from "../data/projects.js";
 
@@ -9,9 +9,6 @@
 </script>
 
 <style>
-  body {
-    @apply border-indigo-900;
-  }
   .icon {
     @apply text-white;
     width: 25px;
@@ -22,8 +19,8 @@
 
 <a href="/">
   <button
-    class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 m-6
-    border-b-4 border-blue-700 hover:border-blue-500 rounded">
+    class="bg-button-dark text-white font-bold py-2 px-4 m-6 border-b-4
+    border-blue-700 rounded">
     <div class="icon inline-block">
       <FaArrowLeft />
     </div>

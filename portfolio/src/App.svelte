@@ -22,6 +22,9 @@
 
 <style global>
   @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
   body {
     @apply bg-background-dark;
   }
@@ -41,14 +44,15 @@
     @apply text-lg;
   }
   a {
-    @apply text-text-buttons;
+    text-decoration: none;
+    @apply text-text-dark;
     @apply text-lg;
   }
-  a:hover {
+  /* a:hover {
+    text-decoration: none;
     @apply bg-button-dark;
-  }
-  @tailwind components;
-  @tailwind utilities;
+    @apply text-text-buttons;
+  } */
 </style>
 
 <main>

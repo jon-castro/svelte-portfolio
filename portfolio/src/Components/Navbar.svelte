@@ -10,8 +10,6 @@
 </script>
 
 <style>
-  .link {
-  }
   .icon {
     @apply text-text-dark;
     width: 40px;
@@ -29,7 +27,7 @@
       <button
         type="button"
         class="block {isDarkMode ? 'text-text-dark' : 'text-text-light'}
-        hover:text-white focus:text-white focus:outline-none"
+        hover:text-orange-600 focus:outline-none"
         on:click={toggleMenu}>
         <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
           {#if isMenuOpen}
