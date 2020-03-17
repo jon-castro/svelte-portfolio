@@ -1,24 +1,11 @@
 <script>
-  // import IoIosSunny from "svelte-icons/io/IoIosSunny.svelte";
-  // import IoIosMoon from "svelte-icons/io/IoIosMoon.svelte";
-
   import { isDarkMode } from "../stores.js";
   import DarkModeButton from "./DarkModeButton.svelte";
 
   let isMenuOpen = false;
-  // let isDarkMode = true;
 
   const toggleMenu = () => (isMenuOpen = !isMenuOpen);
-  // const toggleDarkMode = () => (isDarkMode = !isDarkMode);
 </script>
-
-<style>
-  /* .icon {
-    @apply text-text-dark;
-    width: 40px;
-    height: 40px;
-  } */
-</style>
 
 <header>
   <div class="flex items-center justify-between px-4 py-3">
@@ -77,13 +64,6 @@
       class="h-8 sm:hidden {isMenuOpen ? 'hidden' : 'justify-between'}"
       src="/images/jcastro.dev_text_logo.png"
       alt="Welcome to Jonathan Castro's page!" />
-    <!-- <button class="icon rounded-full" on:click={toggleDarkMode}>
-      {#if isDarkMode}
-        <IoIosSunny />
-      {:else}
-        <IoIosMoon />
-      {/if}
-    </button> -->
     <DarkModeButton />
   </div>
 </header>

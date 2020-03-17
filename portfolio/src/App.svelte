@@ -2,6 +2,8 @@
   import router from "page";
   import routes from "./routes";
 
+  import { isDarkMode } from "./stores.js";
+
   let page;
   let params;
 
@@ -27,6 +29,11 @@
 
   body {
     @apply bg-background-dark;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   }
   header {
     @apply bg-secondary-dark;
@@ -48,13 +55,8 @@
     @apply text-text-dark;
     @apply text-lg;
   }
-  /* a:hover {
-    text-decoration: none;
-    @apply bg-button-dark;
-    @apply text-text-buttons;
-  } */
 </style>
 
-<main>
+<main class={$isDarkMode ? 'bg-background-dark' : 'bg-background-light'}>
   <svelte:component this={page} {params} />
 </main>
