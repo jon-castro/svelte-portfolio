@@ -28,7 +28,6 @@
   @tailwind utilities;
 
   body {
-    @apply bg-background-dark;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,6 +56,8 @@
   }
 </style>
 
-<main class={$isDarkMode ? 'bg-background-dark' : 'bg-background-light'}>
-  <svelte:component this={page} {params} />
-</main>
+<body class={$isDarkMode ? 'bg-background-dark' : 'bg-background-light'}>
+  <main>
+    <svelte:component this={page} {params} />
+  </main>
+</body>
