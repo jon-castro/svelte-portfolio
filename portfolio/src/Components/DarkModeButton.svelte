@@ -9,15 +9,7 @@
   }
 </script>
 
-<style>
-  .icon {
-    @apply text-text-dark;
-    width: 40px;
-    height: 40px;
-  }
-</style>
-
-<button class="icon rounded-full" on:click={toggleDarkMode}>
+<button class="w-10 h-10 outline-none rounded-full" on:click={toggleDarkMode}>
   {#if $isDarkMode === true}
     <IoIosSunny />
   {:else}
