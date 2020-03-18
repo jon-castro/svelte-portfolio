@@ -1,13 +1,14 @@
 <script>
   import { isDarkMode } from "../stores.js";
   import DarkModeButton from "./DarkModeButton.svelte";
+  import BackToTopButton from "./BackToTopButton.svelte";
 
   let isMenuOpen = false;
 
   const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 </script>
 
-<header>
+<header id="header">
   <div class="flex items-center justify-between px-4 py-3">
     <img
       class="h-8 hidden sm:block"
@@ -67,3 +68,4 @@
     <DarkModeButton />
   </div>
 </header>
+<BackToTopButton />

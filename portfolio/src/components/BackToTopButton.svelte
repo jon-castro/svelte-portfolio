@@ -3,11 +3,29 @@
 </script>
 
 <style>
-
+  #myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 </style>
 
-<!-- <button
-  class="w-10 h-10 outline-none rounded-full {$isDarkMode ? 'text-text-dark' : 'text-text-light'}"
-  on:click={toggleDarkMode}>
-  Back to top
-</button> -->
+<a href="#header">
+  <button
+    id="myBtn"
+    class="h-10 w-10 position: absolute outline-none {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+    Top
+  </button>
+</a>
