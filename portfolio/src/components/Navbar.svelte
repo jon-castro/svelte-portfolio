@@ -1,14 +1,21 @@
 <script>
   import { isDarkMode } from "../stores.js";
   import DarkModeButton from "./DarkModeButton.svelte";
-  import BackToTopButton from "./BackToTopButton.svelte";
 
   let isMenuOpen = false;
-
   const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 </script>
 
-<header id="header">
+<style>
+  a {
+    text-decoration: none;
+    @apply text-text-buttons;
+  }
+</style>
+
+<header
+  id="header"
+  class={$isDarkMode ? 'bg-section-dark' : 'bg-section-light'}>
   <div class="flex items-center justify-between px-4 py-3">
     <img
       class="h-8 hidden sm:block"
@@ -17,8 +24,7 @@
     <div class="sm:hidden justify-start">
       <button
         type="button"
-        class="block {$isDarkMode ? 'text-text-dark' : 'text-text-light'}
-        hover:text-orange-600 focus:outline-none"
+        class="block text-text-buttons hover:text-orange-600 focus:outline-none"
         on:click={toggleMenu}>
         <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
           {#if isMenuOpen}
@@ -68,4 +74,3 @@
     <DarkModeButton />
   </div>
 </header>
-<BackToTopButton />

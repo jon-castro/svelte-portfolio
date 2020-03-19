@@ -13,14 +13,14 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-a {
+/* a {
   color: rgb(0, 100, 200);
   text-decoration: none;
 }
 
 a:visited {
   color: rgb(0, 80, 160);
-}
+} */
 
 label {
   display: block;

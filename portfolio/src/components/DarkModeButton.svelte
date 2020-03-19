@@ -10,7 +10,7 @@
 </script>
 
 <button
-  class="w-10 h-10 outline-none rounded-full {$isDarkMode ? 'text-text-dark' : 'text-text-light'}"
+  class="w-10 h-10 outline-none rounded-full {$isDarkMode ? 'text-yellow-400' : 'text-gray-300'}"
   on:click={toggleDarkMode}>
   {#if $isDarkMode === true}
     <IoIosSunny />
