@@ -10,22 +10,21 @@
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
   }
 </style>
 
+{#if }
+   <!-- content here -->
+{:else}
+   <!-- else content here -->
+{/if}
 <a href="#header">
   <button
     id="myBtn"
-    class="h-10 w-10 position: absolute outline-none {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+    class="h-10 w-10 bg-red-700 hover:bg-indigo-800 outline-none {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
     Top
   </button>
 </a>
