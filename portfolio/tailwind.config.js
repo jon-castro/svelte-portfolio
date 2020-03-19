@@ -14,7 +14,9 @@ module.exports = {
         "text-dark": "#FFF",
         "text-buttons": "#FFF"
       },
-      linearGradientColors: theme => theme("colors")
+      linearGradientColors: theme => theme("colors"),
+      radialGradientColors: theme => theme("colors"),
+      conicGradientColors: theme => theme("colors")
     }
   },
   variants: {},
