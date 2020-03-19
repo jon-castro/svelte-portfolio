@@ -56,6 +56,8 @@
   }
 </style>
 
-<main class={$isDarkMode ? 'bg-background-dark' : 'bg-background-light'}>
-  <svelte:component this={page} {params} />
-</main>
+<body class={$isDarkMode ? 'bg-background-dark' : 'bg-background-light'}>
+  <main class={$isDarkMode ? 'bg-background-dark' : 'bg-background-light'}>
+    <svelte:component this={page} {params} />
+  </main>
+</body>

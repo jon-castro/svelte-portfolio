@@ -16,11 +16,6 @@
   }
 </style>
 
-{#if }
-   <!-- content here -->
-{:else}
-   <!-- else content here -->
-{/if}
 <a href="#header">
   <button
     id="myBtn"

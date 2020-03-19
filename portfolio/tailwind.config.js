@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "background-light": "#FFF",
+        "background-light": "#FFFFFF",
         "background-dark": "#000",
         "secondary-light": "#282828",
         "secondary-dark": "#0C0032",
@@ -14,11 +14,9 @@ module.exports = {
         "text-dark": "#FFF",
         "text-buttons": "#FFF"
       },
-      linearGradientColors: theme => theme('colors'),
+      linearGradientColors: theme => theme("colors")
     }
   },
   variants: {},
-  plugins: [
-    require('tailwindcss-gradients'),
-  ],
+  plugins: [require("tailwindcss-gradients")]
 };
