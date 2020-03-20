@@ -2,6 +2,8 @@
   export let params;
 
   import FaArrowLeft from "svelte-icons/fa/FaArrowLeft.svelte";
+  import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
+  import FaLaptopCode from "svelte-icons/fa/FaLaptopCode.svelte";
 
   import { isDarkMode } from "../stores.js";
 
@@ -18,32 +20,69 @@
     height: 25px;
     padding-top: 5%;
   }
+
+  .links {
+    width: 100px;
+    height: 100px;
+  }
+  @screen sm {
+    .links {
+      width: 50px;
+      height: 50px;
+    }
+  }
 </style>
 
 <div>
-  <a href="/">
-    <button
-      class="{$isDarkMode ? 'bg-section-dark' : 'bg-section-light'}
-      text-text-buttons font-bold py-2 px-4 m-6 border-b-4 border-indigo-700
-      rounded">
-      <div class="icon inline-block">
-        <FaArrowLeft />
-      </div>
-      Back to Projects List
-    </button>
-  </a>
-  <div class="justify-center">
-    <DarkModeButton />
+  <div class="grid grid-flow-row grid-cols-6 grid-rows-1">
+    <div class="col-start-2 col-span-2 pt-3">
+      <a href="/">
+        <button
+          class="{$isDarkMode ? 'bg-section-dark' : 'bg-section-light'}
+          text-text-buttons font-bold py-2 px-4 mt-2 ml-2 border-b-4
+          border-indigo-700 rounded">
+          <div class="icon inline-block">
+            <FaArrowLeft />
+          </div>
+          Back to Projects List
+        </button>
+      </a>
+    </div>
+    <div class="col-start-6 pt-4">
+      <DarkModeButton />
+    </div>
   </div>
-  <h1
-    class="text-center opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
-    {data.title}
-  </h1>
-  <p
-    class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
-    {data.body}
-  </p>
   <div class="">
-    <img class="" src={data.image} alt={data.title} />
+    <h1
+      class="text-center opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+      {data.title}
+    </h1>
+  </div>
+  <div>
+    <p
+      class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+      {data.body}
+    </p>
+  </div>
+  <div>
+    {#if data.repoUrl !== ''}
+      <a alt="GitHub repository" href={data.repoUrl} target="_blank">
+        <div
+          class="links opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+          <DiGithubBadge />
+        </div>
+      </a>
+    {/if}
+    {#if data.demoUrl !== ''}
+      <a href={data.demoUrl} target="_blank">
+        <div
+          class="links opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+          <FaLaptopCode />
+        </div>
+      </a>
+    {/if}
+  </div>
+  <div class="">
+    <img src={data.image} alt={data.title} />
   </div>
 </div>

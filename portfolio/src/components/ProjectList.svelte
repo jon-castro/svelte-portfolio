@@ -10,7 +10,6 @@
 
 <style>
   .icon {
-    @apply text-indigo-800;
     width: 50px;
     height: 50px;
   }
