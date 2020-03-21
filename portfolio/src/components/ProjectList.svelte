@@ -55,6 +55,7 @@
             {#if item.demoUrl !== ''}
               <a
                 class="flex no-underline hover:underline text-black"
+                alt="Demo"
                 href={item.demoUrl}
                 target="_blank">
                 <div class="icon">

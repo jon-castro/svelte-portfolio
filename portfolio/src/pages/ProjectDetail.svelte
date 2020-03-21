@@ -20,7 +20,12 @@
     height: 25px;
     padding-top: 5%;
   }
-
+  .links-section-all-present {
+    @apply grid;
+    @apply grid-flow-row;
+    @apply grid-cols-7;
+    @apply grid-rows-1;
+  }
   .links {
     width: 100px;
     height: 100px;
@@ -52,21 +57,23 @@
       <DarkModeButton />
     </div>
   </div>
-  <div class="">
-    <h1
-      class="text-center opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
-      {data.title}
-    </h1>
-  </div>
-  <div>
-    <p
-      class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
-      {data.body}
-    </p>
-  </div>
-  <div>
+  <h1
+    class="pb-2 text-center opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+    {data.title}
+  </h1>
+  <hr
+    class="mt-0 mx-12 pb-2 border-t-2 opacity-75 {$isDarkMode ? 'border-text-dark' : 'border-text-light'}" />
+  <p
+    class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+    {data.body}
+  </p>
+  <div class="links-section-all-present">
     {#if data.repoUrl !== ''}
-      <a alt="GitHub repository" href={data.repoUrl} target="_blank">
+      <a
+        class="sm:col-start-3"
+        alt="GitHub repository"
+        href={data.repoUrl}
+        target="_blank">
         <div
           class="links opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
           <DiGithubBadge />
@@ -74,7 +81,7 @@
       </a>
     {/if}
     {#if data.demoUrl !== ''}
-      <a href={data.demoUrl} target="_blank">
+      <a class="sm:col-start-6" alt="Demo" href={data.demoUrl} target="_blank">
         <div
           class="links opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
           <FaLaptopCode />
