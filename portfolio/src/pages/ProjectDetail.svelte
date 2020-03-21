@@ -33,7 +33,25 @@
 </style>
 
 <div>
-  <div class="grid grid-flow-row grid-cols-6 grid-rows-1">
+  <div class="flex items-center justify-between pl-10 pr-10">
+    <div class="pt-3">
+      <a href="/">
+        <button
+          class="{$isDarkMode ? 'bg-section-dark' : 'bg-section-light'}
+          text-text-buttons font-bold py-2 px-4 mt-2 ml-2 border-b-4
+          border-indigo-700 rounded">
+          <div class="icon inline-block">
+            <FaArrowLeft />
+          </div>
+          Back to Projects List
+        </button>
+      </a>
+    </div>
+    <div class="pt-4">
+      <DarkModeButton />
+    </div>
+  </div>
+  <!-- <div class="grid grid-flow-row grid-cols-6 grid-rows-1">
     <div class="col-start-2 col-span-2 pt-3">
       <a href="/">
         <button
@@ -50,7 +68,7 @@
     <div class="col-start-6 pt-4">
       <DarkModeButton />
     </div>
-  </div>
+  </div> -->
   <h1
     class="pb-2 text-center opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
     {data.title}
@@ -61,7 +79,7 @@
     class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
     {data.body}
   </p>
-  <div class="grid grid-flow-row grid-cols-7 grid-rows-1 mb-3">
+  <div class="flex items-center justify-evenly mb-3">
     {#if data.repoUrl !== ''}
       <a
         class="sm:col-start-3"

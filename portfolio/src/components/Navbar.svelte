@@ -61,12 +61,6 @@
       sm:inline-block sm:justify-between link">
       Articles
     </a>
-    <a
-      href="#contact"
-      class="mt-1 px-2 py-3 font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
-      sm:inline-block sm:justify-between link">
-      Contact
-    </a>
     <img
       class="h-8 sm:hidden {isMenuOpen ? 'hidden' : 'justify-between'}"
       src="/images/jcastro.dev_text_logo.png"
