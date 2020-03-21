@@ -20,12 +20,6 @@
     height: 25px;
     padding-top: 5%;
   }
-  .links-section-all-present {
-    @apply grid;
-    @apply grid-flow-row;
-    @apply grid-cols-7;
-    @apply grid-rows-1;
-  }
   .links {
     width: 100px;
     height: 100px;
@@ -67,7 +61,7 @@
     class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
     {data.body}
   </p>
-  <div class="links-section-all-present">
+  <div class="grid grid-flow-row grid-cols-7 grid-rows-1 mb-3">
     {#if data.repoUrl !== ''}
       <a
         class="sm:col-start-3"
@@ -89,7 +83,7 @@
       </a>
     {/if}
   </div>
-  <div class="">
-    <img src={data.image} alt={data.title} />
+  <div class="grid grid-cols-3">
+    <img class="col-start-2" src={data.image} alt={data.title} />
   </div>
 </div>
