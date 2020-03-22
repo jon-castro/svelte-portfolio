@@ -2,13 +2,12 @@
   import IoIosBriefcase from "svelte-icons/io/IoIosBriefcase.svelte";
 
   import { isDarkMode } from "../stores.js";
-  // import skills from "../data/skills.js";
 
   import { getContext } from "svelte";
   import SkillsContent from "./SkillsContent.svelte";
   const { open } = getContext("simple-modal");
   const showSkillsContent = () => {
-    open(SkillsContent, {}, {});
+    open(SkillsContent);
   };
 </script>
 

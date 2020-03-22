@@ -1,15 +1,7 @@
-<script>
-  import marked from "marked";
-  import skills from "../data/skills";
+<style>
+  h1 {
+    color: black;
+  }
+</style>
 
-  // let source = "# This variable";
-  let source = skills;
-  let markdown = marked(source);
-</script>
-
-<div class="markdown-editor__output">
-  {@html markdown}
-</div>
-<!-- <script>
-  export let message;
-</script><p>🎉 {message} 🍾</p> -->
+<h1 class="opacity-75">Title placed locally</h1>
