@@ -8,7 +8,7 @@
   import SkillsContent from "./SkillsContent.svelte";
   const { open } = getContext("simple-modal");
   const showSkillsContent = () => {
-    open(SkillsContent, {}, { styleContent: { color: "black" } });
+    open(SkillsContent, {}, {});
   };
 </script>
 
