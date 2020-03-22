@@ -1,9 +1,12 @@
 <script>
+  import Modal from "svelte-simple-modal";
   import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
   import IoLogoLinkedin from "svelte-icons/io/IoLogoLinkedin.svelte";
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
 
   import { isDarkMode } from "../stores.js";
+
+  import SkillsButton from "./SkillsButton.svelte";
 </script>
 
 <style>
@@ -39,6 +42,9 @@
         <DiGithubBadge />
       </div>
     </a>
+    <Modal>
+      <SkillsButton />
+    </Modal>
     <a
       id="linkedin-logo"
       class="opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}"

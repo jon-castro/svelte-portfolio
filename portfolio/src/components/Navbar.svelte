@@ -56,12 +56,6 @@
       Projects
     </a>
     <a
-      href="#skills"
-      class="mt-1 px-2 py-3 font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
-      sm:inline-block sm:justify-between link">
-      Skills
-    </a>
-    <a
       href="#articles"
       class="mt-1 px-2 py-3 font-semibold rounded {isMenuOpen ? 'block' : 'hidden'}
       sm:inline-block sm:justify-between link">
