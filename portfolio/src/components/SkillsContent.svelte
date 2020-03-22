@@ -1,7 +1,11 @@
+<script>
+  import { isDarkMode } from "../stores.js";
+</script>
+
 <style>
-  h1 {
-    color: black;
-  }
+
 </style>
 
-<h1 class="opacity-75">Title placed locally</h1>
+<h1 class="opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+  Title placed locally
+</h1>

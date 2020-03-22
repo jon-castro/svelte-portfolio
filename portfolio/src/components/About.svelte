@@ -1,5 +1,5 @@
 <script>
-  import Modal from "svelte-simple-modal";
+  import Modal from "../components/modal/svelte-simple-modal/src/Modal.svelte";
   import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
   import IoLogoLinkedin from "svelte-icons/io/IoLogoLinkedin.svelte";
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";

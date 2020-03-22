@@ -23,7 +23,6 @@
     "sirv-cli": "^0.4.4",
     "svelte-icons": "^1.1.0",
     "svelte-preprocess": "^3.4.0",
-    "svelte-simple-modal": "^0.3.0",
     "tailwindcss": "^1.2.0",
     "tailwindcss-gradients": "^3.0.0"
   }
