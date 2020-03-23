@@ -34,9 +34,6 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   }
-  header {
-    @apply bg-secondary-dark;
-  }
   h1 {
     @apply text-text-dark;
     @apply text-3xl;
