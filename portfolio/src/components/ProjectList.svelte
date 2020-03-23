@@ -3,13 +3,13 @@
   import FaLaptopCode from "svelte-icons/fa/FaLaptopCode.svelte";
 
   import projects from "../data/projects.js";
+  import { isDarkMode } from "../stores.js";
 
   let data = projects;
 </script>
 
 <style>
   .icon {
-    @apply text-indigo-800;
     width: 50px;
     height: 50px;
   }
@@ -17,7 +17,8 @@
 
 <h1 id="projects" class="text-center text-white">Projects</h1>
 
-<div class="container my-12 mx-auto px-4 md:px-12">
+<div
+  class="container mt-2 mx-auto px-4 md:px-12 {$isDarkMode ? 'bg-background-dark' : 'bg-background-light'}">
   <div class="flex flex-wrap justify-center -mx-1 lg:-mx-4">
     {#each data as item}
       <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 xl:w-1/4">
@@ -54,6 +55,7 @@
             {#if item.demoUrl !== ''}
               <a
                 class="flex no-underline hover:underline text-black"
+                alt="Demo"
                 href={item.demoUrl}
                 target="_blank">
                 <div class="icon">
