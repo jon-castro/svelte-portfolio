@@ -36,7 +36,8 @@
               </a>
             </h1>
           </header>
-          <h6 class="m-4 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+          <h6
+            class="m-4 text-center {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
             {item.summary}
           </h6>
           <footer class="flex justify-end leading-none p-2 md:p-4">
