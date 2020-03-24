@@ -15,10 +15,10 @@
 
 <style>
   .icon {
-    @apply text-white;
+    @apply text-text-buttons;
     width: 25px;
     height: 25px;
-    padding-top: 5%;
+    padding-top: 12%;
   }
   .links {
     width: 100px;
@@ -43,7 +43,7 @@
           <div class="icon inline-block">
             <FaArrowLeft />
           </div>
-          Back to Projects List
+          Back
         </button>
       </a>
     </div>
@@ -66,6 +66,7 @@
       <a
         class="sm:col-start-3"
         alt="GitHub repository"
+        title="GitHub repository"
         href={data.repoUrl}
         target="_blank">
         <div
@@ -75,7 +76,12 @@
       </a>
     {/if}
     {#if data.demoUrl !== ''}
-      <a class="sm:col-start-6" alt="Demo" href={data.demoUrl} target="_blank">
+      <a
+        class="sm:col-start-6"
+        alt="Demo"
+        title="Demo"
+        href={data.demoUrl}
+        target="_blank">
         <div
           class="links opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
           <FaLaptopCode />
@@ -84,6 +90,6 @@
     {/if}
   </div>
   <div class="grid grid-cols-3">
-    <img class="col-start-2" src={data.image} alt={data.title} />
+    <img class="col-start-2 rounded-md" src={data.image} alt={data.title} />
   </div>
 </div>

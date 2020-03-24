@@ -22,7 +22,7 @@
   </li>
   <li
     class="text-center font-light opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
-    Svelte.js
+    Svelte
   </li>
   <li
     class="text-center font-light opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
