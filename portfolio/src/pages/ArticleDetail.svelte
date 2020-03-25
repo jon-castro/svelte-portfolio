@@ -1,7 +1,6 @@
 <script>
   export let params;
 
-  import marked from "marked";
   import FaArrowLeft from "svelte-icons/fa/FaArrowLeft.svelte";
 
   import { isDarkMode } from "../stores.js";
@@ -10,8 +9,6 @@
   import articles from "../data/articles";
 
   let data = articles[params.id];
-  let source = "# Testing from here.";
-  let markdown = marked(data.body);
 </script>
 
 <style>
@@ -48,13 +45,10 @@
   </h1>
   <hr
     class="mt-0 mx-12 pb-2 border-t-2 opacity-75 {$isDarkMode ? 'border-text-dark' : 'border-text-light'}" />
-  <!-- <p
+  <p
     class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
     {data.body}
-  </p> -->
-  <div class="markdown-editor__output">
-    {@html markdown}
-  </div>
+  </p>
   <div class="grid grid-cols-3">
     <img class="col-start-2" src={data.image} alt={data.title} />
   </div>
