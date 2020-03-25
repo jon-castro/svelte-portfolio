@@ -45,10 +45,14 @@
   </h1>
   <hr
     class="mt-0 mx-12 pb-2 border-t-2 opacity-75 {$isDarkMode ? 'border-text-dark' : 'border-text-light'}" />
-  <p
+  <!-- <p
     class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
     {data.body}
-  </p>
+  </p> -->
+  <div
+    class="text-center opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+    {@html data.body}
+  </div>
   <div class="grid grid-cols-3">
     <img class="col-start-2" src={data.image} alt={data.title} />
   </div>
