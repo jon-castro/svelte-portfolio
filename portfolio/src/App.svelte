@@ -48,8 +48,6 @@
   }
   a {
     text-decoration: none;
-    @apply text-text-dark;
-    @apply text-lg;
   }
 </style>
 

@@ -57,10 +57,10 @@
   </h1>
   <hr
     class="mt-0 mx-12 pb-2 border-t-2 opacity-75 {$isDarkMode ? 'border-text-dark' : 'border-text-light'}" />
-  <p
+  <div
     class="px-5 py-5 opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
-    {data.body}
-  </p>
+    {@html data.body}
+  </div>
   <div class="flex items-center justify-evenly mb-3">
     {#if data.repoUrl !== ''}
       <a
