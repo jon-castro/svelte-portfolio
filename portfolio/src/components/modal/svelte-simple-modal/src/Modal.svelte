@@ -220,7 +220,7 @@
           <div
             class="content rounded border-2 {$isDarkMode ? 'bg-background-dark border-section-dark' : 'bg-background-light border-section-light'}"
             style={cssContent}>
-            <Component {...props} />
+            <svelte:component this={Component} {...props} />
           </div>
         </div>
       </div>
