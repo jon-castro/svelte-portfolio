@@ -10,6 +10,6 @@
 <Navbar />
 <About />
 <ProjectList />
-<ArticleList />
+<!-- <ArticleList /> -->
 <Footer />
 <BackToTopButton />
