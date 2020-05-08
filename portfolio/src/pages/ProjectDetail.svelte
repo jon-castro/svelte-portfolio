@@ -64,26 +64,26 @@
   <div class="flex items-center justify-evenly mb-3">
     {#if data.repoUrl !== ''}
       <a
-        class="sm:col-start-3"
+        class="sm:col-start-3 hover:text-gray-600 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}"
         alt="GitHub repository"
         title="GitHub repository"
         href={data.repoUrl}
         target="_blank">
         <div
-          class="links opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+          class="links opacity-75">
           <DiGithubBadge />
         </div>
       </a>
     {/if}
     {#if data.demoUrl !== ''}
       <a
-        class="sm:col-start-6"
+        class="sm:col-start-6 hover:text-red-700 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}"
         alt="Demo"
         title="Demo"
         href={data.demoUrl}
         target="_blank">
         <div
-          class="links opacity-75 {$isDarkMode ? 'text-text-dark' : 'text-text-light'}">
+          class="links opacity-75">
           <FaLaptopCode />
         </div>
       </a>
