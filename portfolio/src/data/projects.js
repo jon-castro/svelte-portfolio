@@ -17,7 +17,9 @@ let projects = [
     title: "jcastro.dev (this website)",
     summary: "A mobile first portfolio mainly using Svelte and Tailwind CSS",
     body: `
-    <span>This very same website, </span><a class="text-indigo-600" href="https://jcastro.dev" target="_blank"><u>jcastro.dev</u></a><span>, was built as a personal project to host links to my work and articles. It uses the </span><a class="text-indigo-600" href="https://svelte.dev/" target="_blank"><u>Svelte</u></a><span> framework to fetch and show content, perform routing, and work out all logic. The </span><a class="text-indigo-600" href="https://tailwindcss.com/" target="_blank"><u>Tailwind CSS</u></a><span> framework is used for most of the styling. The </span><a class="text-indigo-600" href="https://github.com/flekschas/svelte-simple-modal" target="_blank"><u>svelte-simple-modal</u></a><span> repo was adapted for the site to be able to change based on the color schemes.</span>
+    <span>This very same website, </span><a class="text-indigo-600" href="https://jcastro.dev" target="_blank"><u>jcastro.dev</u></a><span>, was built as a personal project to host links to some of my work. It uses the </span><a class="text-indigo-600" href="https://svelte.dev/" target="_blank"><u>Svelte</u></a><span> framework to fetch and show content, perform routing, and work out all logic. The </span><a class="text-indigo-600" href="https://tailwindcss.com/" target="_blank"><u>Tailwind CSS</u></a><span> framework is used for most of the styling. The </span><a class="text-indigo-600" href="https://github.com/flekschas/svelte-simple-modal" target="_blank"><u>svelte-simple-modal</u></a><span> repo was adapted for the site to be able to change based on the color schemes.</span>
+    </br></br>
+    <span>Hosted on </span><a class="text-indigo-600" href="https://aws.amazon.com/lightsail/" target="_blank"><u>AWS Lightsail</u></a><span> using Linux and nginx.</span>
     `,
     repoUrl: "https://github.com/jon-castro/svelte-portfolio",
     demoUrl: "",
