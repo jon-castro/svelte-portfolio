@@ -14,6 +14,19 @@ let projects = [
   },
   {
     id: 1,
+    title: "GeoInfo.cc",
+    summary: "Instantly retrieve information about a location with a search.",
+    body: `
+    <span>This React application is a study in using API calls, hooks, and components for a front-end dependent on external APIs. The application can be found at </span><a class="text-indigo-600" href="https://geoinfo.cc" target="_blank"><u>geoinfo.cc</u></a></br></br><p>The following technologies are used:</p><ul><li><a class="text-indigo-600" href="https://reactjs.org/" target="_blank"><u>React Create React App & Hooks</u></a></li><li><a class="text-indigo-600" href="https://www.npmjs.com/package/axios" target="_blank"><u>axios</u></a></li><li><a class="text-indigo-600" href="https://developers.google.com/places/web-service/intro" target="_blank"><u>Google Maps Place Autocomplete API</u></a></li><li><a class="text-indigo-600" href="https://openweathermap.org/api" target="_blank"><u>OpenWeather API</u></a></li><li><a class="text-indigo-600" href="https://developer.foursquare.com/" target="_blank"><u>Foursquare API</u></a></li><li>... among others.</li></ul>
+    </br>
+    <span>Hosted as a static website on </span><a class="text-indigo-600" href="https://aws.amazon.com/s3/" target="_blank"><u>AWS S3.</u></a>
+    `,
+    repoUrl: "https://github.com/jon-castro/svelte-portfolio",
+    demoUrl: "https://geoinfo.cc",
+    image: "/images/geoinfocc.png"
+  },
+  {
+    id: 2,
     title: "jcastro.dev (this website)",
     summary: "A mobile first portfolio mainly using Svelte and Tailwind CSS",
     body: `
