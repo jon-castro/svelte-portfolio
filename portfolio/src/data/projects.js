@@ -24,7 +24,7 @@ let projects = [
     </br>
     <span>Hosted as a static website on </span><a class="text-indigo-600" href="https://aws.amazon.com/s3/" target="_blank"><u>AWS S3.</u></a>
     `,
-    repoUrl: "https://github.com/jon-castro/svelte-portfolio",
+    repoUrl: "https://github.com/jon-castro/geoinfo-cc",
     demoUrl: "https://geoinfo.cc",
     image: "/images/geoinfocc.png"
   },
