@@ -17,6 +17,19 @@ let projects = [
   },
   {
     id: 1,
+    title: "Python pytest-bdd - BDD Test Suite",
+    summary:
+      "Testing suite for showcasing UI automation processes using the demo web app at Swag Labs.",
+    body: `
+    <span>It uses Python pytest and the pytest-bdd package to run Selenium Webdriver, it is organized using POM (Page Object Model) and BDD (Behavior Driven Development) principles.</span>
+    `,
+    repoUrl: "https://github.com/jon-castro/saucedemo-pytest-bdd-ui-test-suite",
+    demoUrl: "",
+    image: "/images/bdd_test_suite_python.png",
+    tag: "Automated Testing",
+  },
+  {
+    id: 2,
     title: "GeoInfo.cc",
     summary: "Instantly retrieve information about a location with a search.",
     body: `
@@ -29,7 +42,7 @@ let projects = [
     image: "/images/geoinfocc.png"
   },
   {
-    id: 2,
+    id: 3,
     title: "jcastro.dev (this website)",
     summary: "A mobile first portfolio mainly using Svelte and Tailwind CSS",
     body: `
